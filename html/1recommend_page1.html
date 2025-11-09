@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Product [ชื่อแบรน]</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAJFpj7XaD63LLlLamhSr5FG9NfJjujZCU",
+        authDomain: "web-project-aaf1d.firebaseapp.com",
+        projectId: "web-project-aaf1d",
+        storageBucket: "web-project-aaf1d.appspot.com",
+        messagingSenderId: "304507208675",
+        appId: "1:304507208675:web:55add1cd6bf1d086b096d6",
+        measurementId: "G-RKKQW9ZDDG",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      window.auth = firebaseAuth.getAuth(app);
+      window.firebaseAuthFunctions = firebaseAuth;
+    </script>
+  </head>
+
+  <body>
+    <div id="modal-overlay" class="modal-overlay" style="display: none">
+      <div class="modal-box">
+        <p id="modal-message"></p>
+        <button onclick="closeModal()">ตกลง</button>
+      </div>
+    </div>
+
+    <div id="main-page">
+      <header class="main-header">
+        <nav class="nav-bar">
+          <div class="nav-content-centered">
+            <a href="1recommend_page1.html" class="logo">YOUR BRAND</a>
+
+            <div class="nav-group nav-right">
+              <a href="2all_product_showing_page2.html">All Product</a>
+              <a href="3cookequip.html">CookingEquipment</a>
+              <a href="4preparetool.html">PreparationTools</a>
+              <a href="5tableware.html">Tableware</a>
+              <a href="6cleaningtool.html">CleaningTools</a>
+              <a href="7storageequip.html">StorageEquipment</a>
+              <form class="search-form" action="/search" method="GET">
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="ค้นหา..."
+                  class="search-input"
+                />
+                <button type="submit" class="search-submit-btn"></button>
+              </form>
+              <a href="#" class="nav-icon" id="cart-icon">🛒</a>
+              <a href="auth_page.html?redirect=page1.html" class="nav-icon" id="login-icon">👤</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>[สินค้าใหม่] The Future of Simplicity.</h1>
+            <p>
+              สัมผัสประสบการณ์ใหม่ที่ผสมผสานประสิทธิภาพและดีไซน์ได้อย่างลงตัว
+            </p>
+            <div class="cta-group">
+              <a href="#product-detail-1" class="cta-button primary"
+                >เรียนรู้เพิ่มเติม</a
+              >
+              <a href="#buy-section" class="cta-button secondary">ซื้อเลย</a>
+            </div>
+          </div>
+          <div class="hero-image-placeholder"></div>
+        </section>
+
+        <section id="product-detail-1" class="feature-section light-bg">
+          <div class="feature-text">
+            <h2>ดีไซน์ที่ไม่มีอะไรมารบกวน</h2>
+            <p>
+              ทุกรายละเอียดได้รับการออกแบบมาอย่างพิถีพิถัน
+              เพื่อให้คุณรู้สึกเหมือนผลิตภัณฑ์เป็นส่วนหนึ่งของชีวิต
+            </p>
+          </div>
+          <div class="feature-image"></div>
+        </section>
+
+        <section class="feature-section dark-bg">
+          <div class="feature-text white-text">
+            <h2>ประสิทธิภาพที่เหนือกว่าความคาดหมาย</h2>
+            <p>
+              ขับเคลื่อนด้วยเทคโนโลยีที่ล้ำสมัย ทำงานได้เร็วขึ้น ฉลาดขึ้น
+              และมีประสิทธิภาพมากขึ้น
+            </p>
+          </div>
+          <div class="feature-image"></div>
+        </section>
+
+        <section id="product-detail-2" class="feature-section light-bg">
+          <div class="feature-text">
+            <h2>สัมผัสที่เรียบง่าย</h2>
+            <p>
+              ทุกองค์ประกอบถูกสร้างขึ้นเพื่อประสบการณ์ที่สบายตาและใช้งานง่าย
+            </p>
+          </div>
+          <div class="feature-image"></div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>© 2025 YOUR BRAND. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales & Refunds</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Auth -->
+    <div id="auth-page" class="auth-page" style="display: none">
+      <button class="back-button" onclick="goBackFromAuth()">← ย้อนกลับ</button>
+      <div class="auth-container">
+        <h2 id="auth-title">เข้าสู่ระบบ</h2>
+
+        <div id="user-info" style="display: none">
+          <p>ยินดีต้อนรับ: <span id="user-email-display"></span></p>
+          <button onclick="window.logout()" class="cta-button secondary">
+            ออกจากระบบ
+          </button>
+        </div>
+
+        <div id="auth-form">
+          <input type="email" id="email" placeholder="อีเมล" required /><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="รหัสผ่าน"
+            required
+          /><br />
+
+          <div class="auth-buttons">
+            <button onclick="window.login()" class="cta-button primary">
+              เข้าสู่ระบบ
+            </button>
+            <button onclick="window.signup()" class="cta-button secondary">
+              สมัครสมาชิก
+            </button>
+          </div>
+          <button onclick="window.resetPassword()" class="link-button">
+            ลืมรหัสผ่าน?
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
