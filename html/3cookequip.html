@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal Product [ชื่อแบรน]</title>
     <link rel="stylesheet" href="/css/style.css" />
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAJFpj7XaD63LLlLamhSr5FG9NfJjujZCU",
+        authDomain: "web-project-aaf1d.firebaseapp.com",
+        projectId: "web-project-aaf1d",
+        storageBucket: "web-project-aaf1d.appspot.com",
+        messagingSenderId: "304507208675",
+        appId: "1:304507208675:web:55add1cd6bf1d086b096d6",
+        measurementId: "G-RKKQW9ZDDG",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      window.auth = firebaseAuth.getAuth(app);
+      window.firebaseAuthFunctions = firebaseAuth;
+    </script>
   </head>
   <body>
 
@@ -22,7 +41,7 @@
             <a href="1recommend_page1.html" class="logo">YOUR BRAND</a>
 
             <div class="nav-group nav-right">
-              <a href="2all_product_showing_page2.html">All Product</a>  
+              <a href="2all_product_showing_page2.html">All Product</a>
               <a href="3cookequip.html">CookingEquipment</a>
               <a href="4preparetool.html">PreparationTools</a>
               <a href="5tableware.html">Tableware</a>
@@ -45,7 +64,33 @@
       </header>
 
       <main>
-        
+        <section class="hero-section">
+          <!-- <div class="hero-content">
+            <h1>[สินค้าใหม่] The Future of Simplicity.</h1>
+            <p>
+              สัมผัสประสบการณ์ใหม่ที่ผสมผสานประสิทธิภาพและดีไซน์ได้อย่างลงตัว
+            </p>
+            <div class="cta-group">
+              <a href="#product-detail-1" class="cta-button primary"
+                >เรียนรู้เพิ่มเติม</a
+              >
+              <a href="#buy-section" class="cta-button secondary">ซื้อเลย</a>
+            </div>
+          </div> -->
+          <h1>page 3 na</h1>
+          <!-- <div class="hero-image-placeholder"></div> -->
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>© 2025 YOUR BRAND. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales & Refunds</a>
+        </div>
+      </footer>
+    </div>
 
     <!-- Auth -->
     <div id="auth-page" class="auth-page" style="display: none">
