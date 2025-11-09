@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal Product [ชื่อแบรน]</title>
     <link rel="stylesheet" href="/css/style.css" />
-      <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-        import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-        const firebaseConfig = {
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+      const firebaseConfig = {
         apiKey: "AIzaSyAJFpj7XaD63LLlLamhSr5FG9NfJjujZCU",
         authDomain: "web-project-aaf1d.firebaseapp.com",
         projectId: "web-project-aaf1d",
@@ -17,15 +18,14 @@
         messagingSenderId: "304507208675",
         appId: "1:304507208675:web:55add1cd6bf1d086b096d6",
         measurementId: "G-RKKQW9ZDDG",
-        };
+      };
 
-        const app = initializeApp(firebaseConfig);
-        window.auth = firebaseAuth.getAuth(app);
-        window.firebaseAuthFunctions = firebaseAuth;
-      </script>
+      const app = initializeApp(firebaseConfig);
+      window.auth = firebaseAuth.getAuth(app);
+      window.firebaseAuthFunctions = firebaseAuth;
+    </script>
   </head>
   <body>
-
     <div id="modal-overlay" class="modal-overlay" style="display: none">
       <div class="modal-box">
         <p id="modal-message"></p>
@@ -40,7 +40,7 @@
             <a href="1recommend_page1.html" class="logo">YOUR BRAND</a>
 
             <div class="nav-group nav-right">
-              <a href="2all_product_showing_page2.html">All Product</a>  
+              <a href="2all_product_showing_page2.html">All Product</a>
               <a href="3cookequip.html">CookingEquipment</a>
               <a href="4preparetool.html">PreparationTools</a>
               <a href="5tableware.html">Tableware</a>
@@ -56,17 +56,43 @@
                 <button type="submit" class="search-submit-btn"></button>
               </form>
               <a href="#" class="nav-icon" id="cart-icon">🛒</a>
-              <a href="auth_page.html?redirect=page2.html" class="nav-icon" id="login-icon">👤</a>
+              <a href="#login" class="nav-icon" id="login-icon">👤</a>
             </div>
           </div>
         </nav>
       </header>
 
       <main>
-        
+        <section class="hero-section">
+          <!-- <div class="hero-content">
+            <h1>[สินค้าใหม่] The Future of Simplicity.</h1>
+            <p>
+              สัมผัสประสบการณ์ใหม่ที่ผสมผสานประสิทธิภาพและดีไซน์ได้อย่างลงตัว
+            </p>
+            <div class="cta-group">
+              <a href="#product-detail-1" class="cta-button primary"
+                >เรียนรู้เพิ่มเติม</a
+              >
+              <a href="#buy-section" class="cta-button secondary">ซื้อเลย</a>
+            </div>
+          </div> -->
+          <h1>d ja</h1>
+          <!-- <div class="hero-image-placeholder"></div> -->
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>© 2025 YOUR BRAND. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales & Refunds</a>
+        </div>
+      </footer>
+    </div>
 
     <!-- Auth -->
-    <!-- <div id="auth-page" class="auth-page" style="display: none">
+    <div id="auth-page" class="auth-page" style="display: none">
       <button class="back-button" onclick="goBackFromAuth()">← ย้อนกลับ</button>
       <div class="auth-container">
         <h2 id="auth-title">เข้าสู่ระบบ</h2>
@@ -100,7 +126,7 @@
           </button>
         </div>
       </div>
-    </div> -->
+    </div>
     <script src="/JS/script.js"></script>
   </body>
 </html>
