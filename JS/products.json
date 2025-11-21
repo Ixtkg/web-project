@@ -311,7 +311,7 @@
   {
     "id": 39,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
@@ -319,7 +319,7 @@
   {
     "id": 40,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
@@ -327,7 +327,7 @@
   {
     "id": 41,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
@@ -335,7 +335,7 @@
   {
     "id": 42,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
@@ -343,7 +343,7 @@
   {
     "id": 43,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
@@ -367,7 +367,7 @@
   {
     "id": 46,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
@@ -375,7 +375,7 @@
   {
     "id": 47,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
@@ -383,7 +383,7 @@
   {
     "id": 48,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
@@ -391,7 +391,7 @@
   {
     "id": 49,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -399,7 +399,7 @@
   {
     "id": 50,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
@@ -407,7 +407,7 @@
   {
     "id": 51,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -415,7 +415,7 @@
   {
     "id": 52,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
@@ -423,7 +423,7 @@
   {
     "id": 53,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -431,7 +431,7 @@
   {
     "id": 54,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
@@ -439,7 +439,7 @@
   {
     "id": 55,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "-กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -447,7 +447,7 @@
   {
     "id": 56,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
@@ -455,7 +455,7 @@
   {
     "id": 57,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -463,7 +463,7 @@
   {
     "id": 58,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
@@ -471,7 +471,7 @@
   {
     "id": 59,
     "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 290,
     "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
     "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
@@ -479,7 +479,7 @@
   {
     "id": 60,
     "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
+    "category": "",
     "price": 3500,
     "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
     "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
