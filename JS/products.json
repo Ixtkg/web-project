@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "หม้อสแตนเลส 3 ชั้น",
+    "name": "หม้ออบลมร้อน",
     "category": "CookingEquipment",
     "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
+    "description": "หม้ออบลมร้อนระบบลมร้อนหมุนเวียน อบ อุ่น ปิ้ง ย่าง ได้ในเครื่องเดียว ทำอาหารได้รวดเร็ว ไม่ใช้น้ำมัน ประหยัดเวลาและสุขภาพดีขึ้น",
     "image": "../images/cook1.jpg"
   },
   {
@@ -13,7 +13,7 @@
     "category": "CookingEquipment",
     "price": 890,
     "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "image": "../images/cook2.jpg"
   },
   {
     "id": 3,
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "name": "หม้อสแตนเลส 8 ชั้น",
-    "category": "CookingEquipment",
+    "category": "PreparationTools",
     "price": 1290,
     "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
     "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "name": "กระทะเคลือบ 28 ซม.",
-    "category": "CookingEquipment",
+    "category": "PreparationTools",
     "price": 890,
     "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
     "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "name": "มีดเชฟสแตนเลส 8 นิ้ว",
-    "category": "PreparationTools",
+    "category": "Tableware",
     "price": 550,
     "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
     "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
@@ -170,7 +170,7 @@
   {
     "id": 22,
     "name": "เขียงไม้ยางพารา",
-    "category": "PreparationTools",
+    "category": "Tableware",
     "price": 320,
     "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
     "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "name": "มีดเชฟสแตนเลส 8 นิ้ว",
-    "category": "PreparationTools",
+    "category": "Tableware",
     "price": 550,
     "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
     "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "name": "เขียงไม้ยางพารา",
-    "category": "PreparationTools",
+    "category": "Tableware",
     "price": 320,
     "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
     "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
@@ -210,7 +210,7 @@
   {
     "id": 27,
     "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 790,
     "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
     "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
@@ -218,7 +218,7 @@
   {
     "id": 28,
     "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 450,
     "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
     "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
@@ -226,7 +226,7 @@
   {
     "id": 29,
     "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 790,
     "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
     "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
@@ -234,7 +234,7 @@
   {
     "id": 30,
     "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 450,
     "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
     "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
@@ -242,7 +242,7 @@
   {
     "id": 31,
     "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 790,
     "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
     "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
@@ -250,7 +250,7 @@
   {
     "id": 32,
     "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
+    "category": "CleaningTools",
     "price": 450,
     "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
     "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
@@ -258,7 +258,7 @@
   {
     "id": 33,
     "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
+    "category": "StorageEquipment",
     "price": 790,
     "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
     "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
@@ -266,7 +266,7 @@
   {
     "id": 34,
     "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
+    "category": "StorageEquipment",
     "price": 450,
     "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
     "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
@@ -274,7 +274,7 @@
   {
     "id": 35,
     "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
+    "category": "StorageEquipment",
     "price": 790,
     "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
     "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
@@ -282,7 +282,7 @@
   {
     "id": 36,
     "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
+    "category": "StorageEquipment",
     "price": 450,
     "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
     "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
@@ -290,7 +290,7 @@
   {
     "id": 37,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "StorageEquipment",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
@@ -298,11 +298,16 @@
   {
     "id": 38,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "StorageEquipment",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
   },
+
+
+
+
+
   {
     "id": 39,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",

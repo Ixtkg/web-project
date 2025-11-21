@@ -399,7 +399,7 @@ li
 }
 
 .auth-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   color: #1d1d1f;
 }
 
@@ -480,7 +480,7 @@ li
 
 .product-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: #e2e2e7;
   border-radius: 8px;
   margin-bottom: 15px;
