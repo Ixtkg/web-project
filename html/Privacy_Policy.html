@@ -45,21 +45,52 @@
               <a href="../html/5tableware.html">Tableware</a>
               <a href="../html/6cleaningtool.html">CleaningTools</a>
               <a href="../html/7storageequip.html">StorageEquipment</a>
-              <form class="search-form" action="/search" method="GET">
+
+              <form
+                class="search-form"
+                onsubmit="event.preventDefault(); searchProduct();"
+              >
                 <input
                   type="text"
-                  name="q"
+                  id="search-input"
                   placeholder="ค้นหา..."
                   class="search-input"
                 />
                 <button type="submit" class="search-submit-btn"></button>
               </form>
-              <a href="#" class="nav-icon" id="cart-icon">🛒</a>
+              <a
+                href="#"
+                class="nav-icon"
+                id="cart-icon"
+                onclick="toggleCart()"
+              >
+                🛒
+                <span class="cart-badge" id="cart-badge" style="display: none"
+                  >0</span
+                >
+              </a>
               <a href="#login" class="nav-icon" id="login-icon">👤</a>
             </div>
           </div>
         </nav>
       </header>
+
+      <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+          <h2>ตะกร้าสินค้า</h2>
+          <button class="close-cart-btn" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <div class="empty-cart">ตะกร้าสินค้าว่างเปล่า</div>
+        </div>
+        <div class="cart-summary" id="cart-summary" style="display: none">
+          <div class="cart-total">
+            <span>ยอดรวม:</span>
+            <span id="cart-total-price">฿0</span>
+          </div>
+          <button class="checkout-btn" onclick="checkout()">ชำระเงิน</button>
+        </div>
+      </div>
 
       <main>
         <section class="hero-section">
@@ -160,5 +191,7 @@
       </div>
     </div>
     <script src="../JS/script.js"></script>
+    <script src="../JS/products.js"></script>
+    <script src="../JS/cart.js"></script>
   </body>
 </html>
