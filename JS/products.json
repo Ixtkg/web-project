@@ -351,7 +351,7 @@
   {
     "id": 44,
     "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
+    "category": "]",
     "price": 120,
     "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
     "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
@@ -359,7 +359,7 @@
   {
     "id": 45,
     "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
+    "category": "]",
     "price": 89,
     "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
     "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
