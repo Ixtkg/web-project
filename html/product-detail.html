@@ -39,7 +39,9 @@
           <a href="../html/1recommend_page1.html" class="logo">YOUR BRAND</a>
           <div class="nav-group nav-right">
             <a href="../html/2all_product_showing_page2.html">All Product</a>
-            <a href="#" onclick="window.close()" style="color: #ff3b30">ปิดหน้าต่าง</a>
+            <a href="#" onclick="window.close()" style="color: #ff3b30"
+              >ปิดหน้าต่าง</a
+            >
           </div>
         </div>
       </nav>
@@ -49,46 +51,53 @@
       <div class="product-detail-container">
         <div class="product-detail-content" id="product-detail">
           <!-- รายละเอียดสินค้าจะถูกโหลดที่นี่ -->
-          <p style="text-align: center; padding: 50px;">กำลังโหลด...</p>
+          <p style="text-align: center; padding: 50px">กำลังโหลด...</p>
         </div>
       </div>
     </main>
 
     <footer class="main-footer">
       <p>© 2025 YOUR BRAND. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../html/Privacy_Policy.html">Privacy Policy</a>
+        <a href="../html/Term_of_use.html">Terms of Use</a>
+        <a href="../html/sale_refunds.html">Sales & Refunds</a>
+      </div>
     </footer>
 
-  <script>
-  let products = [];
+    <script>
+      let products = [];
 
-  async function loadProducts() {
-    const res = await fetch('../JS/products.json');
-    products = await res.json();
-  }
+      async function loadProducts() {
+        const res = await fetch("../JS/products.json");
+        products = await res.json();
+      }
 
-  window.addEventListener("DOMContentLoaded", async () => {
-    await loadProducts();
+      window.addEventListener("DOMContentLoaded", async () => {
+        await loadProducts();
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get("id"));
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get("id"));
 
-    const product = products.find(p => p.id === productId);
-    const productDetailDiv = document.getElementById("product-detail");
+        const product = products.find((p) => p.id === productId);
+        const productDetailDiv = document.getElementById("product-detail");
 
-    if (!product) {
-      productDetailDiv.innerHTML = `
+        if (!product) {
+          productDetailDiv.innerHTML = `
         <div style ="text-align: center; padding: 50px;">
           <h2>ไม่พบสินค้า</h2>
           <p>ขออภัย ไม่พบสินค้าที่คุณค้นหา</p>
           <button onclick="window.close()" class="cta-button primary">ปิดหน้าต่าง</button>
         </div>
       `;
-      return;
-    }
+          return;
+        }
 
-    productDetailDiv.innerHTML = `
+        productDetailDiv.innerHTML = `
       <div>
-        <img src="${product.image}" alt="${product.name}" class="product-detail-image" />
+        <img src="${product.image}" alt="${
+          product.name
+        }" class="product-detail-image" />
       </div>
       <div class="product-detail-info">
         <h1>${product.name}</h1>
@@ -108,9 +117,8 @@
         </button>
       </div>
     `;
-  });
-</script>
-
+      });
+    </script>
 
     <script>
       // ฟังก์ชันแสดง Modal
@@ -125,14 +133,13 @@
         document.getElementById("modal-overlay").style.display = "none";
       };
 
-
       function getCategoryName(category) {
         const categoryNames = {
           CookingEquipment: "อุปกรณ์ปรุงอาหาร",
           PreparationTools: "อุปกรณ์เตรียมอาหาร",
           Tableware: "ชุดรับประทานอาหาร",
           CleaningTools: "อุปกรณ์ทำความสะอาด",
-          StorageEquipment: "อุปกรณ์จัดเก็บ"
+          StorageEquipment: "อุปกรณ์จัดเก็บ",
         };
         return categoryNames[category] || category;
       }
@@ -158,7 +165,9 @@
         // แสดงรายละเอียดสินค้า
         productDetailDiv.innerHTML = `
           <div>
-            <img src="${product.image}" alt="${product.name}" class="product-detail-image" />
+            <img src="${product.image}" alt="${
+          product.name
+        }" class="product-detail-image" />
           </div>
           <div class="product-detail-info">
             <h1>${product.name}</h1>
@@ -193,7 +202,7 @@
       // เพิ่มลงตะกร้าจากหน้ารายละเอียด
       window.addToCartFromDetail = function () {
         const quantity = parseInt(document.getElementById("quantity").value);
-        
+
         // ดึงตะกร้าจาก localStorage
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -205,7 +214,7 @@
         } else {
           cart.push({
             ...product,
-            quantity: quantity
+            quantity: quantity,
           });
         }
 
