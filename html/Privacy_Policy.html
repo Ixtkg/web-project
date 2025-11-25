@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal Product [ชื่อแบรน]</title>
+    <title>Privacy Policy</title>
     <link rel="stylesheet" href="../css/style.css" />
-
+    
     <script type="module" src="../JS/firebase-init.js"></script>
 
   </head>
@@ -14,24 +14,6 @@
       <div class="modal-box">
         <p id="modal-message"></p>
         <button onclick="closeModal()">ตกลง</button>
-      </div>
-    </div>
-
-    <!-- Cart Sidebar -->
-    <div id="cart-sidebar" class="cart-sidebar">
-      <div class="cart-header">
-        <h2>ตะกร้าสินค้า</h2>
-        <button class="close-cart-btn" onclick="toggleCart()">×</button>
-      </div>
-      <div class="cart-items" id="cart-items">
-        <div class="empty-cart">ตะกร้าสินค้าว่างเปล่า</div>
-      </div>
-      <div class="cart-summary" id="cart-summary" style="display: none">
-        <div class="cart-total">
-          <span>ยอดรวม:</span>
-          <span id="cart-total-price">฿0</span>
-        </div>
-        <button class="checkout-btn" onclick="checkout()">ชำระเงิน</button>
       </div>
     </div>
 
@@ -48,8 +30,11 @@
               <a href="../html/5tableware.html">Tableware</a>
               <a href="../html/6cleaningtool.html">CleaningTools</a>
               <a href="../html/7storageequip.html">StorageEquipment</a>
-              
-              <form class="search-form" onsubmit="event.preventDefault(); searchProduct();">
+
+              <form
+                class="search-form"
+                onsubmit="event.preventDefault(); searchProduct();"
+              >
                 <input
                   type="text"
                   id="search-input"
@@ -58,9 +43,16 @@
                 />
                 <button type="submit" class="search-submit-btn">🔍</button>
               </form>
-              <a href="#" class="nav-icon" id="cart-icon" onclick="toggleCart()">
+              <a
+                href="#"
+                class="nav-icon"
+                id="cart-icon"
+                onclick="toggleCart()"
+              >
                 🛒
-                <span class="cart-badge" id="cart-badge" style="display: none">0</span>
+                <span class="cart-badge" id="cart-badge" style="display: none"
+                  >0</span
+                >
               </a>
               <a href="#login" class="nav-icon" id="login-icon">👤</a>
             </div>
@@ -68,11 +60,71 @@
         </nav>
       </header>
 
+      <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+          <h2>ตะกร้าสินค้า</h2>
+          <button class="close-cart-btn" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <div class="empty-cart">ตะกร้าสินค้าว่างเปล่า</div>
+        </div>
+        <div class="cart-summary" id="cart-summary" style="display: none">
+          <div class="cart-total">
+            <span>ยอดรวม:</span>
+            <span id="cart-total-price">฿0</span>
+          </div>
+          <button class="checkout-btn" onclick="checkout()">ชำระเงิน</button>
+        </div>
+      </div>
+
       <main>
-        <section class="product-grid-section">
-          <h2>All Product</h2>
-          <div class="product-grid" id="product-grid">
-            <!-- สินค้าจะถูกแสดงที่นี่โดย JavaScript -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>Privacy Policy</h1>
+            <p>
+              Thank you for using our services. This Privacy Policy explains how
+              we collect, use, and protect your personal information when you
+              use our website and services.
+            </p>
+
+            <h3>1. Information Collection</h3>
+            <p>
+              We may collect personal information such as your name, email,
+              shipping address, and payment information when you subscribe or
+              place an order through our website.
+            </p>
+
+            <h3>2. Use of Information</h3>
+            <p>
+              The information we collect is used to process orders, improve our
+              services, and communicate with you regarding promotions or
+              relevant updates.
+            </p>
+
+            <h3>3. Data Protection</h3>
+            <p>
+              We implement appropriate security measures to protect your
+              personal information from unauthorized access, disclosure, or
+              destruction.
+            </p>
+
+            <h3>4. Disclosure of Information</h3>
+            <p>
+              We will not disclose your personal information to third parties
+              except when necessary to process your order or when we have
+              obtained your consent.
+            </p>
+
+            <h3>5. Your Rights</h3>
+            <p>
+              You have the right to access, correct, or delete your personal
+              information as permitted by law. If you wish to exercise these
+              rights, please contact us through the channels provided on our
+              website.
+            </p>
+
+            <h3>6. Policy Changes</h3>
+            <p>We may update this Privacy Policy from time to time.</p>
           </div>
         </section>
       </main>
@@ -87,7 +139,7 @@
       </footer>
     </div>
 
-    <!-- Auth Page -->
+    <!-- Auth -->
     <div id="auth-page" class="auth-page" style="display: none">
       <button class="back-button" onclick="goBackFromAuth()">← ย้อนกลับ</button>
       <div class="auth-container">
@@ -123,7 +175,6 @@
         </div>
       </div>
     </div>
-
     <script src="../JS/script.js"></script>
     <script src="../JS/products.js"></script>
     <script src="../JS/cart.js"></script>

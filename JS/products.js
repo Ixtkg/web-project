@@ -8,11 +8,6 @@ async function loadProducts() {
   return products;
 }
 
-window.addEventListener("DOMContentLoaded", async () => {
-  await loadProducts();
-  displayProducts();
-  updateCartBadge();
-});
 
 window.addEventListener("DOMContentLoaded", async () => {
   await loadProducts();   // ← โหลด JSON ก่อน
@@ -137,28 +132,7 @@ function updateCartBadge() {
   }
 }
 
-// เรียกใช้เมื่อโหลดหน้า
-window.addEventListener("DOMContentLoaded", () => {
-  // ตรวจสอบว่าอยู่ในหน้าไหน
-  const currentPage = window.location.pathname;
 
-  if (currentPage.includes("2all_product_showing_page2.html")) {
-    displayProducts();
-  } else if (currentPage.includes("3cookequip.html")) {
-    displayProducts("CookingEquipment");
-  } else if (currentPage.includes("4preparetool.html")) {
-    displayProducts("PreparationTools");
-  } else if (currentPage.includes("5tableware.html")) {
-    displayProducts("Tableware");
-  } else if (currentPage.includes("6cleaningtool.html")) {
-    displayProducts("CleaningTools");
-  } else if (currentPage.includes("7storageequip.html")) {
-    displayProducts("StorageEquipment");
-  }
-
-  // อัปเดต badge เมื่อโหลดหน้า
-  updateCartBadge();
-});
 
 // Export ฟังก์ชันให้ใช้ได้ทั่วทั้งเว็บ
 window.viewProduct = viewProduct;
@@ -197,20 +171,19 @@ function displayProductsList(list) {
 
   container.innerHTML = list
     .map(product => `
-      <div class="product-card">
-        <div class="product-image" onclick="viewProduct(${product.id})">
-          <img src="${product.image}" alt="${product.name}" />
-        </div>
+      <div class="product-card" onclick="viewProduct(${product.id})">
+        <img src="${product.image}" alt="${product.name}" class="product-image"/>
         <h3>${product.name}</h3>
         <p class="product-category">${getCategoryName(product.category)}</p>
         <p class="product-price">฿${product.price.toLocaleString()}</p>
-        <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
+        <button class="add-to-cart-btn" onclick="addToCart(${product.id}, event)">
           เพิ่มลงตะกร้า
         </button>
       </div>
     `)
     .join("");
 }
+
 
 // export ฟังก์ชัน
 window.searchProduct = searchProduct;

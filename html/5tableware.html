@@ -6,24 +6,8 @@
     <title>Minimal Product [ชื่อแบรน]</title>
     <link rel="stylesheet" href="../css/style.css" />
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-      import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    <script type="module" src="../JS/firebase-init.js"></script>
 
-      const firebaseConfig = {
-        apiKey: "AIzaSyAJFpj7XaD63LLlLamhSr5FG9NfJjujZCU",
-        authDomain: "web-project-aaf1d.firebaseapp.com",
-        projectId: "web-project-aaf1d",
-        storageBucket: "web-project-aaf1d.appspot.com",
-        messagingSenderId: "304507208675",
-        appId: "1:304507208675:web:55add1cd6bf1d086b096d6",
-        measurementId: "G-RKKQW9ZDDG",
-      };
-
-      const app = initializeApp(firebaseConfig);
-      window.auth = firebaseAuth.getAuth(app);
-      window.firebaseAuthFunctions = firebaseAuth;
-    </script>
   </head>
   <body>
 
@@ -98,9 +82,9 @@
       <footer class="main-footer">
         <p>© 2025 YOUR BRAND. All rights reserved.</p>
         <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Sales & Refunds</a>
+          <a href="../html/Privacy_Policy.html">Privacy Policy</a>
+          <a href="../html/Term_of_use.html">Terms of Use</a>
+          <a href="../html/sale_refunds.html">Sales & Refunds</a>
         </div>
       </footer>
     </div>
