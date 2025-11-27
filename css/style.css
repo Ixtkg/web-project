@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #1d1d1f; /* Apple's near-black color */
-  background-color: #f5f5f7; /* Light neutral background */
+  background-color: #f5f5f5; /* Light neutral background */
   line-height: 1.6;
 }
 
@@ -129,12 +129,48 @@ li
 .hero-image-placeholder {
   width: 90%;
   max-width: 1200px;
-  height: 600px; /* ปรับขนาดให้เป็นไปตามภาพสินค้าจริง */
-  background-color: #e2e2e7; /* Placeholder color */
+  height: 600px; 
+  background-color: #ffffff; 
   margin: 20px auto;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
 }
+
+.hero-image-placeholder .swiper-slide img {
+  margin-top:  60px;
+}
+
+.hero-image-placeholder .swiper-button-next,
+.hero-image-placeholder .swiper-button-prev {
+  color: #333;
+  width: 45px;
+  height: 45px;
+
+ 
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  backdrop-filter: blur(6px);
+
+
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-image-placeholder .swiper-button-next {
+  right: 15px;  
+}
+
+.hero-image-placeholder .swiper-button-prev {
+  left: 15px;   
+}
+
+.hero-image-placeholder .swiper-button-next:after,
+.hero-image-placeholder .swiper-button-prev:after {
+  font-size: 18px; 
+}
+
 
 /* จัดรูปแบบช่องค้นหาโดยรวม */
 .search-form {
@@ -247,11 +283,18 @@ li
 }
 
 .feature-image {
-  flex: 1;
+  display: flex;
   height: 500px;
-  background-color: #e2e2e7; /* Placeholder color */
+  background-color: #e2e2e7; 
   border-radius: 12px;
   margin: 0 50px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-image img {
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .white-text h2,
@@ -898,5 +941,5 @@ li
   .auth-container {
     padding: 30px 20px;
   }
-}
 
+}
