@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <script type="module" src="../JS/firebase-init.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -25,14 +29,17 @@
             <a href="../html/1recommend_page1.html" class="logo">VIF SHOP</a>
 
             <div class="nav-group nav-right">
-              <a href="../html/2all_product_showing_page2.html">VIF SHOP</a>
+              <a href="../html/2all_product_showing_page2.html">Our Shop</a>
               <a href="../html/3cookequip.html">CookingEquipment</a>
               <a href="../html/4preparetool.html">PreparationTools</a>
               <a href="../html/5tableware.html">Tableware</a>
               <a href="../html/6cleaningtool.html">CleaningTools</a>
               <a href="../html/7storageequip.html">StorageEquipment</a>
 
-              <form class="search-form" onsubmit="event.preventDefault(); searchProduct();">
+              <form
+                class="search-form"
+                onsubmit="event.preventDefault(); searchProduct();"
+              >
                 <input
                   type="text"
                   id="search-input"
@@ -79,9 +86,9 @@
       <main>
         <section class="hero-section">
           <div class="hero-content">
-            <h1>[สินค้าใหม่] The Future of Simplicity.</h1>
+            <h1>[NEW ARRIVE!] Air Convection Oven  </h1>
             <p>
-              สัมผัสประสบการณ์ใหม่ที่ผสมผสานประสิทธิภาพและดีไซน์ได้อย่างลงตัว
+              สัมผัสประสบการณ์การทำอาหารใหม่ด้วยหม้ออบลมร้อนที่ผสมผสานประสิทธิภาพและดีไซน์ที่เรียบหรู
             </p>
             <div class="cta-group">
               <a href="#product-detail-1" class="cta-button primary"
@@ -90,39 +97,74 @@
               <a href="#buy-section" class="cta-button secondary">ซื้อเลย</a>
             </div>
           </div>
-          <div class="hero-image-placeholder"></div>
+          <div class="hero-image-placeholder">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../images/cook1.1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/cook1.2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/cook1.3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/cook1.4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/cook1.5.png">
+              </div>
+            </div>
+
+            <!-- ปุ่มเลื่อน -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- จุดเลื่อน -->
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
 
         <section id="product-detail-1" class="feature-section light-bg">
           <div class="feature-text">
-            <h2>ดีไซน์ที่ไม่มีอะไรมารบกวน</h2>
+            <h2>ฟังก์ชันการใช้งานที่หลากหลาย</h2>
             <p>
-              ทุกรายละเอียดได้รับการออกแบบมาอย่างพิถีพิถัน
-              เพื่อให้คุณรู้สึกเหมือนผลิตภัณฑ์เป็นส่วนหนึ่งของชีวิต
+              หม้ออบลมร้อนนี้มาพร้อมกับโหมดการทำอาหารที่หลากหลายไม่ว่าจะเป็นของคาวหรือของหวาน
+              ตั้งแต่การอบ การย่าง การทอดไร้น้ำมัน ไปจนถึงการอบขนมหวาน
+              ทุกอย่างครบจบในเครื่องเดียว
             </p>
           </div>
-          <div class="feature-image"></div>
+          <div class="feature-image">
+            <img src="../images/feature3.png">
+          </div>
         </section>
 
         <section class="feature-section dark-bg">
           <div class="feature-text white-text">
-            <h2>ประสิทธิภาพที่เหนือกว่าความคาดหมาย</h2>
+            <h2>มาพร้อมกับเทคโนโลยีที่ล้ำสมัย</h2>
             <p>
-              ขับเคลื่อนด้วยเทคโนโลยีที่ล้ำสมัย ทำงานได้เร็วขึ้น ฉลาดขึ้น
-              และมีประสิทธิภาพมากขึ้น
+              ด้วยเทคโนโลยี JUICYLOCK ที่ช่วยล็อกความชุ่มชื้นภายในอาหาร
+              ทำให้อาหารที่ปรุงสุกมีความนุ่มชุ่มฉ่ำและรสชาติที่ยอดเยี่ยม และหน้าต่างซีทรูขนาดใหญ่
+              ช่วยให้คุณสามารถมองเห็นอาหารขณะปรุงได้อย่างชัดเจน
             </p>
           </div>
-          <div class="feature-image"></div>
+          <div class="feature-image">
+            <img id="f2" src="../images/feature2.png"/>
+          </div>
         </section>
 
         <section id="product-detail-2" class="feature-section light-bg">
           <div class="feature-text">
-            <h2>สัมผัสที่เรียบง่าย</h2>
+            <h2>สัมผัสที่เรียบง่าย เรียบหรู แต่คุ้มค่า</h2>
             <p>
-              ทุกองค์ประกอบถูกสร้างขึ้นเพื่อประสบการณ์ที่สบายตาและใช้งานง่าย
+              ดีไซน์ที่ทันสมัยและเรียบง่ายของหม้ออบลมร้อนนี้
+              จะเติมเต็มความสวยงามให้กับห้องครัวของคุณ นอกจากนี้ยังมีความจุขนาดใหญ่ที่เหมาะสำหรับการปรุงอาหารสำหรับครอบครัว และประหยัดพลังงาน
+              ช่วยลดค่าไฟฟ้าในระยะยาวได้อีกด้วย
             </p>
           </div>
-          <div class="feature-image"></div>
+          <div class="feature-image">
+            <img src="../images/feature1.png">
+          </div>
         </section>
       </main>
 
@@ -175,5 +217,6 @@
     <script src="../JS/script.js"></script>
     <script src="../JS/cart.js"></script>
     <script src="../JS/products.js"></script>
+    <script src="../JS/swiper.js"></script>
   </body>
 </html>
