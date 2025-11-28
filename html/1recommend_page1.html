@@ -94,7 +94,16 @@
               <a href="#product-detail-1" class="cta-button primary"
                 >เรียนรู้เพิ่มเติม</a
               >
-              <a href="" class="cta-button secondary">ซื้อเลย</a>
+               <button class="cta-button secondary" onclick="goToProduct()">
+                ซื้อเลย
+              </button>
+
+              <script>
+              function goToProduct() {
+              window.location.href = "./product-detail.html?id=1";
+              }
+              </script>
+
             </div>
           </div>
           <div class="hero-image-placeholder">
@@ -177,6 +186,37 @@
         </div>
       </footer>
     </div>
+
+  </script>
+    window.addToCartFromDetail = function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = parseInt(urlParams.get("id"));
+
+    const product = products.find((p) => p.id === productId);
+    if (!product) return;
+
+    const quantity = parseInt(document.getElementById("quantity").value);
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingItem = cart.find((item) => item.id === productId);
+
+    if (existingItem) {
+      existingItem.quantity += quantity;
+    } else {
+      cart.push({
+        ...product,
+        quantity: quantity,
+      });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showModal(`เพิ่ม "${product.name}" จำนวน ${quantity} ชิ้น ลงตะกร้าแล้ว`);
+    
+    // อัปเดต badge
+    if (window.updateCartBadge) updateCartBadge();
+  };
+    
+  </script>
 
     <!-- Auth -->
     <div id="auth-page" class="auth-page" style="display: none">
