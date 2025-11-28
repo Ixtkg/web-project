@@ -1,482 +1,315 @@
 [
   {
     "id": 1,
-    "name": "หม้อสแตนเลส 3 ชั้น",
+    "name": "หม้ออบลมร้อน",
     "category": "CookingEquipment",
-    "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "../images/cook1.jpg"
+    "price": 2990,
+    "description": "หม้ออบลมร้อนระบบลมร้อนหมุนเวียน อบ อุ่น ปิ้ง ย่าง ได้ในเครื่องเดียว, ทำอาหารได้รวดเร็ว, ไม่ใช้น้ำมัน, ประหยัดเวลาและสุขภาพดีขึ้น",
+    "image": "../images/cook1.1.png"
   },
   {
     "id": 2,
-    "name": "กระทะเคลือบ 28 ซม.",
+    "name": "กระทะเคลือบเทฟล่อน",
     "category": "CookingEquipment",
-    "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "price": 950,
+    "description": " ใช้น้ำมันน้อย, ไม่ติดกระทะ, ทำความสะอาดง่าย, ทนสารเคมี, ไม่ดูดซับน้ำและไขมัน, ทนความร้อนระดับหนึ่ง",
+    "image": "../images/cook2.jpg"
   },
   {
     "id": 3,
-    "name": "หม้อสแตนเลส 4 ชั้น",
+    "name": "หม้อสแตนเลส",
     "category": "CookingEquipment",
-    "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
+    "price": 590,
+    "description": " ไม่เป็นสนิม ,แข็งแรง ทนทาน ,ปลอดภัยต่ออาหาร ,ทนความร้อนสูง ,ทำความสะอาดง่าย, ไม่นำความร้อนเร็วเท่าอลูมิเนียม",
+    "image": "../images/cook3.jpg"
   },
   {
     "id": 4,
-    "name": "กระทะเคลือบ 28 ซม.",
+    "name": "หม้อหุงข้าว",
     "category": "CookingEquipment",
-    "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "price": 690,
+    "description": "หุงข้าวได้สะดวกและรวดเร็ว, คงอุณหภูมิอัตโนมัติ (Keep Warm) ,ปลอดภัย ใช้งานง่าย ประหยัดพลังงาน ,ทำอาหารอย่างอื่นได้ ,หม้อด้านในเคลือบสารกันติด",
+    "image": "../images/cook4.jpg"
   },
   {
     "id": 5,
-    "name": "หม้อสแตนเลส 5 ชั้น",
+    "name": "เตาไฟฟ้า",
     "category": "CookingEquipment",
     "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
+    "description": "ใช้งานง่าย ควบคุมความร้อนได้สะดวก, ไม่ต้องใช้แก๊ส,ใช้ได้กับภาชนะหลายประเภท (ขึ้นกับชนิดเตา),ทำความสะอาดง่าย,ปลอดภัยด้วยระบบตัดไฟอัตโนมัติ,ตั้งอุณหภูมิได้แม่นยำ,",
+    "image": "../images/cook5.jpg"
   },
   {
     "id": 6,
-    "name": "กระทะเคลือบ 28 ซม.",
+    "name": "เตาแก๊ส",
     "category": "CookingEquipment",
-    "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "price": 1090,
+    "description": "ให้ความร้อนเร็วและแรง,ควบคุมไฟได้ง่ายและแม่นยำ,ใช้ได้กับภาชนะทุกชนิด,ไม่ต้องใช้ไฟฟ้า,",
+    "image": "../images/cook6.jpg"
   },
   {
     "id": 7,
-    "name": "หม้อสแตนเลส 6 ชั้น",
+    "name": "หม้อนึ่งไฟฟ้า",
     "category": "CookingEquipment",
-    "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
+    "price": 1590,
+    "description": "ใช้งานง่าย เพียงเติมน้ำแล้วกดปุ่ม,สุกด้วยไอน้ำ 100%,ตั้งเวลาได้,ปลอดภัยด้วยระบบตัดไฟอัตโนมัติ,ทำอาหารได้หลากหลาย,ทำความสะอาดง่าย,ประหยัดนํ้ามันม",
+    "image": "../images/cook7.jpg"
   },
   {
     "id": 8,
-    "name": "กระทะเคลือบ 28 ซม.",
+    "name": "เครื่องปิ้งขนมปัง",
     "category": "CookingEquipment",
-    "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "price": 690,
+    "description": "ปิ้งขนมปังได้รวดเร็ว,ปรับระดับความร้อนได้,ระบบดีดขนมปังขึ้นอัตโนมัติ,มีระบบตัดไฟอัตโนมัติ,ถาดรองเศษขนมปังถอดได้,ใช้งานสะดวก,ประหยัดพลังงาน,",
+    "image": "../images/cook8.jpg"
   },
   {
     "id": 9,
-    "name": "หม้อสแตนเลส 7 ชั้น",
+    "name": "เครื่องชงกาแฟ",
     "category": "CookingEquipment",
-    "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
+    "price": 12290,
+    "description": "ชงกาแฟได้รวดเร็วและสม่ำเสมอ,ระบบควบคุมอุณหภูมิ,มีหลายประเภทให้เลือกใช้,บางรุ่นมีระบบบดเมล็ดในตัว,ระบบตีฟองนมหรือหัวสตีม (ในเครื่องเอสเปรสโซ),ตั้งโปรแกรมเวลาได้ ,ทำความสะอาดง่าย,",
+    "image": "../images/cook9.jpg"
   },
   {
     "id": 10,
-    "name": "กระทะเคลือบ 28 ซม.",
+    "name": "ไมโครเวฟ",
     "category": "CookingEquipment",
-    "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "price": 3990,
+    "description": "อุ่นอาหารได้รวดเร็ว,ทำงานด้วยคลื่นไมโครเวฟ,ใช้งานง่าย,ปรับระดับความร้อนได้หลายระดับ,ประหยัดไฟ,ทำอาหารได้หลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/cook10.jpg"
   },
   {
     "id": 11,
-    "name": "หม้อสแตนเลส 8 ชั้น",
+    "name": "กระติกนํ้าร้อนไฟฟ้า",
     "category": "CookingEquipment",
-    "price": 1290,
-    "description": "หม้อสแตนเลสคุณภาพสูง 3 ชั้น เหมาะสำหรับการทำอาหาร ทนทาน ไม่เป็นสนิม",
-    "image": "https://via.placeholder.com/400x400/007aff/ffffff?text=หม้อ+3+ชั้น"
+    "price": 1590,
+    "description": "ต้มน้ำร้อนเร็ว,ระบบตัดไฟอัตโนมัติ,ประหยัดพลังงาน,ใช้งานง่าย,ปลอดภัย,ทำความสะอาดง่าย,มีหลายขนาดและดีไซน์,",
+    "image": "../images/cook11.jpg"
   },
   {
     "id": 12,
-    "name": "กระทะเคลือบ 28 ซม.",
-    "category": "CookingEquipment",
+    "name": "เขียงไม้ยางพารา",
+    "category": "PreparationTools",
     "price": 890,
-    "description": "กระทะเคลือบเทฟล่อน ใช้น้ำมันน้อย ไม่ติดกระทะ",
-    "image": "https://via.placeholder.com/400x400/34c759/ffffff?text=กระทะ"
+    "description": "ใช้เป็นพื้นรองในการหั่นอาหาร,ปลอดภัยต่ออาหาร,ทำจากวัสดุต่าง ๆ,ใช้งานหลากหลาย,ทำความสะอาดง่าย,ป้องกันการลื่น,",
+    "image": "../images/Prepara1.jpg"
   },
   {
     "id": 13,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
+    "name": "มีด",
     "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
+    "price": 100,
+    "description": "ใช้สำหรับหั่น ตัด สับอาหาร,ทำจากวัสดุทนทาน,คมและแม่นยำ,ด้ามจับสะดวก ปลอดภัย,ทำความสะอาดง่าย,",
+    "image": "../images/Prepara2.jpg"
   },
   {
     "id": 14,
-    "name": "เขียงไม้ยางพารา",
+    "name": "กรรไกร",
     "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "price": 50,
+    "description": "ใช้สำหรับตัดวัสดุต่าง ๆ,ใบมีดทำจากวัสดุทนทาน,ด้ามจับสะดวก,คมแม่นยำ,ทำความสะอาดง่าย,",
+    "image": "../images/Prepara3.jpg"
   },
   {
     "id": 15,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
+    "name": "ถ้วยประกอบอาหาร",
     "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
+    "price": 20,
+    "description": "ใช้เป็นภาชนะสำหรับใส่อาหาร,ทนความร้อนและความเย็น,ดีไซน์หลากหลาย,ทำความสะอาดง่าย",
+    "image": "../images/Prepara4.jpg"
   },
   {
     "id": 16,
-    "name": "เขียงไม้ยางพารา",
+    "name": "ค้อนทุบเนื้อ",
     "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "price": 300,
+    "description": "ใช้สำหรับทุบหรือแผ่เนื้อ,ทำจากวัสดุแข็งและทนทาน,น้ำหนักและดีไซน์เหมาะมือ,ใช้งานหลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Prepara5.jpg"
   },
   {
     "id": 17,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
+    "name": "เครื่องปั่นแป้ง",
     "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
+    "price": 5550,
+    "description": "ใช้ผสมและนวดแป้ง,ประหยัดแรงและเวลา,ปรับความเร็วได้หลายระดับ,ทำจากวัสดุทนทาน,ใช้งานหลากหลาย,ทำความสะอาดง่าย",
+    "image": "../images/Prepara6.jpg"
   },
   {
     "id": 18,
-    "name": "เขียงไม้ยางพารา",
+    "name": "ที่ปลอกเปลือกผลไม้",
     "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "price": 25,
+    "description": "ใช้สำหรับปลอกเปลือกผลไม้หรือผัก,ใบมีดคม,ดีไซน์จับถนัดมือ,ใช้งานหลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Prepara7.jpg"
   },
   {
     "id": 19,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
+    "name": "กระชอนกรอง",
     "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
+    "price": 50,
+    "description": "ใช้สำหรับกรองหรือสะเด็ดอาหาร,ทำจากวัสดุทนทาน,มีหลายขนาดและรูปทรง,ทำความสะอาดง่าย,ใช้งานหลากหลาย,",
+    "image": "../images/Prepara8.jpg"
   },
   {
     "id": 20,
-    "name": "เขียงไม้ยางพารา",
+    "name": "ช้อนตวงส่วนผสม",
     "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "price": 150,
+    "description": "ใช้วัดปริมาตรส่วนผสมอาหาร,มีขนาดมาตรฐาน,ทำจากวัสดุทนทาน,ดีไซน์ใช้งานง่าย,ทำความสะอาดง่าย,",
+    "image": "../images/Prepara9.jpg"
   },
   {
     "id": 21,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
-    "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
+    "name": "จานชาม",
+    "category": "Tableware",
+    "price": 100,
+    "description": "ใช้สำหรับใส่อาหาร,ทำจากวัสดุต่าง ๆ,ทนความร้อน,ดีไซน์หลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Table1.jpg"
   },
   {
     "id": 22,
-    "name": "เขียงไม้ยางพารา",
-    "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "name": "ช้อนส้อม",
+    "category": "Tableware",
+    "price": 100,
+    "description": "ใช้สำหรับรับประทานอาหาร,ทำจากวัสดุต่าง ๆ,ทนความร้อน,ดีไซน์สะดวกต่อการใช้งาน,ทำความสะอาดง่าย,",
+    "image": "../images/Table2.jpg"  
   },
   {
     "id": 23,
-    "name": "มีดเชฟสแตนเลส 8 นิ้ว",
-    "category": "PreparationTools",
-    "price": 550,
-    "description": "มีดเชฟคมกริบ เหล็กสแตนเลสคุณภาพสูง จับถนัดมือ",
-    "image": "https://via.placeholder.com/400x400/ff3b30/ffffff?text=มีดเชฟ"
-  },
+    "name": "แก้ว",
+    "category": "Tableware",
+    "price": 50,
+    "description": "ใช้สำหรับดื่มเครื่องดื่ม,ทำจากวัสดุกระจก,ทนความร้อน (ขึ้นกับชนิดแก้ว),ดีไซน์หลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Table3.jpg"  
+},
   {
     "id": 24,
-    "name": "เขียงไม้ยางพารา",
-    "category": "PreparationTools",
-    "price": 320,
-    "description": "เขียงไม้ยางพาราธรรมชาติ แข็งแรง ทนทาน ไม่ทำลายคมมีด",
-    "image": "https://via.placeholder.com/400x400/ffcc00/ffffff?text=เขียง"
+    "name": "แผ่นรองภาชนะ",
+    "category": "Tableware",
+    "price": 90,
+    "description": "ใช้วางรองจาน ชาม แก้ว หรือถ้วย,ทำจากวัสดุต่าง ๆ,ช่วยตกแต่งโต๊ะอาหาร,ป้องกันเสียงและแรงกระแทก,ทำความสะอาดง่าย,",
+    "image": "../images/Table4.jpg" 
   },
   {
     "id": 25,
-    "name": "ชุดจาน 6 ชิ้น",
+    "name": "เหยือกนํ้า",
     "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "price": 150,
+    "description": "ใช้สำหรับเก็บและรินน้ำ,ทำจากวัสดุต่าง ๆ,ขนาดและดีไซน์หลากหลาย,ทำความสะอาดง่าย,ช่วยจัดเก็บและเสิร์ฟสะดวก,",
+    "image": "../images/Table5.jpg"  
   },
   {
     "id": 26,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
+    "name": "ทัพพี",
     "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "price": 40,
+    "description": "ใช้สำหรับตักหรือเสิร์ฟอาหารของเหลว,ทำจากวัสดุต่าง ๆ,ทนความร้อน,ดีไซน์สะดวกในการใช้งาน,ทำความสะอาดง่าย,",
+    "image": "../images/Table6.jpg"  
   },
   {
     "id": 27,
-    "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "name": "ฟองนํ้าสำหรับทำความสะอาด",
+    "category": "CleaningTools",
+    "price": 10,
+    "description": "ใช้สำหรับขัดทำความสะอาด,ทำจากวัสดุต่าง ๆ,ดีไซน์สะดวก,ใช้งานหลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Clean1.jpg"  
   },
   {
     "id": 28,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "name": "แปรงขัด",
+    "category": "CleaningTools",
+    "price": 20,
+    "description": "ใช้สำหรับขัดทำความสะอาด,ทำจากวัสดุต่าง ๆ,ดีไซน์สะดวก,ใช้งานหลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Clean2.jpg"  
   },
   {
     "id": 29,
-    "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "name": "ผ้าเช็ดจาน",
+    "category": "CleaningTools",
+    "price": 30,
+    "description": "ใช้สำหรับเช็ดและซับน้ำหลังล้างจาน,ทำจากวัสดุต่าง ๆ,ขนาดและดีไซน์,ใช้งานหลากหลาย,ทำความสะอาดง่าย, ",
+    "image": "../images/Clean3.jpg"  
   },
   {
     "id": 30,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "name": "ไม้กวาด ",
+    "category": "CleaningTools",
+    "price": 40,
+    "description": "ใช้สำหรับกวาดทำความสะอาดพื้น,ทำจากวัสดุต่าง ๆ,ดีไซน์สะดวก,ใช้งานหลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Clean4.jpg"  
   },
   {
     "id": 31,
-    "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "name": "ถังขยะ",
+    "category": "CleaningTools",
+    "price": 180,
+    "description": "ใช้สำหรับเก็บขยะและสิ่งปฏิกูล,ทำจากวัสดุต่าง ๆ,มีหลายรูปแบบ,ขนาดและความจุต่างกัน,ทำความสะอาดง่าย,",
+    "image": "../images/Clean5.jpg"  
   },
   {
     "id": 32,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "name": "ถุงดำ",
+    "category": "CleaningTools",
+    "price": 50,
+    "description": "ใช้สำหรับเก็บขยะ,ทำจากวัสดุพลาสติก,มีหลายขนาดและความหนา,สีดำช่วยปกปิดขยะ,ใช้งานง่าย,",
+    "image": "../images/Clean6.jpg"  
   },
   {
     "id": 33,
-    "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "name": "ภาชนะใส่อาหารพร้อมฝาปิด",
+    "category": "StorageEquipment",
+    "price": 70,
+    "description": "ใช้สำหรับเก็บอาหาร,ทำจากวัสดุต่าง ๆ,มีฝาปิดแน่น,ขนาดและดีไซน์หลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Storage1.jpg"  
   },
   {
     "id": 34,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "name": "โหลบรรจุวัตถุดิบ",
+    "category": "StorageEquipment",
+    "price": 50,
+    "description": "ใช้สำหรับเก็บวัตถุดิบอาหาร,ทำจากวัสดุต่าง ๆ,ฝาปิดแน่น,ขนาดและดีไซน์หลากหลาย,ทำความสะอาดง่าย,",
+    "image": "../images/Storage2.jpg"  
   },
   {
     "id": 35,
-    "name": "ชุดจาน 6 ชิ้น",
-    "category": "Tableware",
-    "price": 790,
-    "description": "ชุดจานเซรามิค สีขาว 6 ชิ้น เหมาะสำหรับการรับประทานอาหาร",
-    "image": "https://via.placeholder.com/400x400/5856d6/ffffff?text=จาน"
+    "name": "ซิปล็อค",
+    "category": "StorageEquipment",
+    "price": 20,
+    "description": "ใช้สำหรับเก็บอาหารและของใช้,ทำจากวัสดุพลาสติก,มีซิปล็อคปิด-เปิดง่าย,ขนาดและรูปแบบหลากหลาย,ใช้งานสะดวกและประหยัดพื้นที่,",
+    "image": "../images/Storage3.jpg"  
   },
   {
     "id": 36,
-    "name": "ชุดช้อนส้อม 12 ชิ้น",
-    "category": "Tableware",
-    "price": 450,
-    "description": "ชุดช้อนส้อมสแตนเลส 12 ชิ้น เงางาม ทนทาน",
-    "image": "https://via.placeholder.com/400x400/ff2d55/ffffff?text=ช้อนส้อม"
+    "name": "ตู้เย็น",
+    "category": "StorageEquipment",
+    "price": 7500,
+    "description": " ใช้สำหรับเก็บรักษาอาหารและเครื่องดื่ม,ทำความเย็นด้วยระบบไฟฟ้า,ขนาดและดีไซน์หลากหลาย,ระบบควบคุมอุณหภูมิ,ฟีเจอร์เสริม  -ระบบน้ำแข็งอัตโนมัติ (Ice Maker) -ระบบกรองน้ำและเครื่องจ่ายน้ำเย็น -ระบบละลายน้ำแข็งอัตโนมัติ (Frost-Free),",
+    "image": "../images/Storage4.jpg"  
   },
   {
     "id": 37,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
+    "name": "ชั้นวางของ",
+    "category": "StorageEquipment",
+    "price": 2500,
+    "description": "ใช้สำหรับจัดเก็บสิ่งของ,ทำจากวัสดุต่าง ๆ,ขนาดและดีไซน์หลากหลาย,เพิ่มความสะดวกในการใช้งาน,ทำความสะอาดง่าย,",
+    "image": "../images/Storage5.jpg"  
   },
   {
     "id": 38,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
+    "name": "ตู้เก็บของ",
+    "category": "StorageEquipment",
+    "price": 5000,
+    "description": "ใช้สำหรับเก็บและจัดระเบียบสิ่งของ,ทำจากวัสดุต่าง ๆ,ดีไซน์และฟังก์ชันหลากหลาย,เพิ่มความสะดวกในการใช้งาน,ทำความสะอาดง่าย,",
+    "image": "../images/Storage6.jpg"  
   },
-  {
+    {
     "id": 39,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
+    "name": "สเปรย์เช็ดจาน",
     "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
-  },
-  {
-    "id": 40,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
-  },
-  {
-    "id": 41,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
-  },
-  {
-    "id": 42,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
-  },
-  {
-    "id": 43,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
-  },
-  {
-    "id": 44,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
-  },
-  {
-    "id": 45,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
-  },
-  {
-    "id": 46,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
-  },
-  {
-    "id": 47,
-    "name": "ฟองน้ำล้างจาน 6 ชิ้น",
-    "category": "CleaningTools",
-    "price": 89,
-    "description": "ฟองน้ำล้างจานคุณภาพดี ไม่ขูดถลอกภาชนะ",
-    "image": "https://via.placeholder.com/400x400/af52de/ffffff?text=ฟองน้ำ"
-  },
-  {
-    "id": 48,
-    "name": "น้ำยาล้างจาน 1000 มล.",
-    "category": "CleaningTools",
-    "price": 120,
-    "description": "น้ำยาล้างจานสูตรอ่อนโยน กลิ่นมะนาว",
-    "image": "https://via.placeholder.com/400x400/00c7be/ffffff?text=น้ำยา"
-  },
-  {
-    "id": 49,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 50,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
-  },
-  {
-    "id": 51,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 52,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
-  },
-  {
-    "id": 53,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 54,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
-  },
-  {
-    "id": 55,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "-กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 56,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
-  },
-  {
-    "id": 57,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 58,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
-  },
-  {
-    "id": 59,
-    "name": "กล่องเก็บอาหาร 3 ชิ้น",
-    "category": "StorageEquipment",
-    "price": 290,
-    "description": "กล่องเก็บอาหารพลาสติก 3 ขนาด ปิดสนิท เก็บได้ในตู้เย็น",
-    "image": "https://via.placeholder.com/400x400/ff9500/ffffff?text=กล่อง"
-  },
-  {
-    "id": 60,
-    "name": "ตู้เก็บของในครัว",
-    "category": "StorageEquipment",
-    "price": 3500,
-    "description": "ตู้เก็บของในครัว 3 ชั้น วัสดุไม้อัดคุณภาพสูง",
-    "image": "https://via.placeholder.com/400x400/8e8e93/ffffff?text=ตู้"
+    "price": 100,
+    "description": "ใช้สำหรับทำความสะอาดจาน ชาม และภาชนะ,ทำจากสารทำความสะอาดอ่อนโยน,ใช้งานสะดวก,ประหยัดน้ำและเวลา,กลิ่นหอมและลดกลิ่นไม่พึงประสงค์,",
+    "image": "../images/Clean7.jpg"  
   }
+  
 ]

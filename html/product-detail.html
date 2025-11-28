@@ -3,27 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>รายละเอียดสินค้า - YOUR BRAND</title>
+    <title>รายละเอียดสินค้า - VIF SHOP</title>
     <link rel="stylesheet" href="../css/style.css" />
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-      import * as firebaseAuth from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    <script type="module" src="../JS/firebase-init.js"></script>
 
-      const firebaseConfig = {
-        apiKey: "AIzaSyAJFpj7XaD63LLlLamhSr5FG9NfJjujZCU",
-        authDomain: "web-project-aaf1d.firebaseapp.com",
-        projectId: "web-project-aaf1d",
-        storageBucket: "web-project-aaf1d.appspot.com",
-        messagingSenderId: "304507208675",
-        appId: "1:304507208675:web:55add1cd6bf1d086b096d6",
-        measurementId: "G-RKKQW9ZDDG",
-      };
-
-      const app = initializeApp(firebaseConfig);
-      window.auth = firebaseAuth.getAuth(app);
-      window.firebaseAuthFunctions = firebaseAuth;
-    </script>
   </head>
   <body>
     <div id="modal-overlay" class="modal-overlay" style="display: none">
@@ -36,65 +20,111 @@
     <header class="main-header">
       <nav class="nav-bar">
         <div class="nav-content-centered">
-          <a href="../html/1recommend_page1.html" class="logo">YOUR BRAND</a>
+          <a href="../html/1recommend_page1.html" class="logo">VIF SHOP</a>
           <div class="nav-group nav-right">
-            <a href="../html/2all_product_showing_page2.html">All Product</a>
-            <a href="#" onclick="window.close()" style="color: #ff3b30">ปิดหน้าต่าง</a>
+            <form class="search-form" onsubmit="event.preventDefault(); searchProduct();">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="ค้นหา..."
+                  class="search-input"
+                />
+                <button type="submit" class="search-submit-btn">🔍</button>
+              </form>
+              <a href="#" class="nav-icon" id="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-badge" id="cart-badge" style="display: none">0</span>
+              </a>
           </div>
         </div>
       </nav>
     </header>
+    <a href="../html/2all_product_showing_page2.html" class="detail-back-btn">← Back</a>
+
+
+     <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h2>ตะกร้าสินค้า</h2>
+        <button class="close-cart-btn" onclick="toggleCart()">×</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <div class="empty-cart">ตะกร้าสินค้าว่างเปล่า</div>
+      </div>
+      <div class="cart-summary" id="cart-summary" style="display: none">
+        <div class="cart-total">
+          <span>ยอดรวม:</span>
+          <span id="cart-total-price">฿0</span>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">ชำระเงิน</button>
+      </div>
+    </div>
 
     <main class="product-detail-page">
       <div class="product-detail-container">
         <div class="product-detail-content" id="product-detail">
           <!-- รายละเอียดสินค้าจะถูกโหลดที่นี่ -->
-          <p style="text-align: center; padding: 50px;">กำลังโหลด...</p>
+          <p style="text-align: center; padding: 50px">กำลังโหลด...</p>
         </div>
       </div>
     </main>
+    
+
 
     <footer class="main-footer">
-      <p>© 2025 YOUR BRAND. All rights reserved.</p>
+      <p>© 2025 VIF SHOP. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../html/Privacy_Policy.html">Privacy Policy</a>
+        <a href="../html/Term_of_use.html">Terms of Use</a>
+        <a href="../html/sale_refunds.html">Sales & Refunds</a>
+      </div>
     </footer>
 
-  <script>
-  let products = [];
+    <script>
+      
+      window.addEventListener("DOMContentLoaded", async () => {
+        await loadProducts();
 
-  async function loadProducts() {
-    const res = await fetch('../JS/products.json');
-    products = await res.json();
-  }
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get("id"));
 
-  window.addEventListener("DOMContentLoaded", async () => {
-    await loadProducts();
+        const product = products.find((p) => p.id === productId);
+        const productDetailDiv = document.getElementById("product-detail");
+        
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get("id"));
-
-    const product = products.find(p => p.id === productId);
-    const productDetailDiv = document.getElementById("product-detail");
-
-    if (!product) {
-      productDetailDiv.innerHTML = `
+        if (!product) {
+          productDetailDiv.innerHTML = `
         <div style ="text-align: center; padding: 50px;">
           <h2>ไม่พบสินค้า</h2>
           <p>ขออภัย ไม่พบสินค้าที่คุณค้นหา</p>
           <button onclick="window.close()" class="cta-button primary">ปิดหน้าต่าง</button>
         </div>
       `;
-      return;
-    }
+          return;
+        }
+        
+        // แยกรายละเอียดสินค้าโดยใช้คอมม่า
+        const descriptionList = product.description
+            .split(",")                    // แบ่งตามเครื่องหมายคอมม่า
+            .map(item => item.trim())      // ตัดช่องว่างด้านหน้า/หลัง
+            .filter(item => item.length > 0) // กันข้อมูลว่าง
+            .map(item => `<li>${item}</li>`)
+            .join("");                     // รวมเป็น HTML เดียว
+      
+        productDetailDiv.innerHTML = `
+          <div>
+          <img src="${product.image}" alt="${
+          product.name
+          }" class="product-detail-image" />
+          </div>
+          <div class="product-detail-info">
+          <h1>${product.name}</h1>
+          <p class="detail-category">${getCategoryName(product.category)}</p>
+          <p class="detail-price">฿${product.price.toLocaleString()}</p>
+          <ul class="detail-description-list">
+          ${descriptionList}
+          </ul>
 
-    productDetailDiv.innerHTML = `
-      <div>
-        <img src="${product.image}" alt="${product.name}" class="product-detail-image" />
-      </div>
-      <div class="product-detail-info">
-        <h1>${product.name}</h1>
-        <p class="detail-category">${getCategoryName(product.category)}</p>
-        <p class="detail-price">฿${product.price.toLocaleString()}</p>
-        <p class="detail-description">${product.description}</p>
         
         <div class="quantity-selector">
           <label>จำนวน:</label>
@@ -108,9 +138,8 @@
         </button>
       </div>
     `;
-  });
-</script>
-
+      });
+    </script>
 
     <script>
       // ฟังก์ชันแสดง Modal
@@ -125,95 +154,66 @@
         document.getElementById("modal-overlay").style.display = "none";
       };
 
-
       function getCategoryName(category) {
         const categoryNames = {
           CookingEquipment: "อุปกรณ์ปรุงอาหาร",
           PreparationTools: "อุปกรณ์เตรียมอาหาร",
           Tableware: "ชุดรับประทานอาหาร",
           CleaningTools: "อุปกรณ์ทำความสะอาด",
-          StorageEquipment: "อุปกรณ์จัดเก็บ"
+          StorageEquipment: "อุปกรณ์จัดเก็บ",
         };
         return categoryNames[category] || category;
       }
-
-      // ดึง product ID จาก URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const productId = parseInt(urlParams.get("id"));
-
-      // ค้นหาสินค้า
-      const product = products.find((p) => p.id === productId);
-
-      const productDetailDiv = document.getElementById("product-detail");
-
-      if (!product) {
-        productDetailDiv.innerHTML = `
-          <div style ="text-align: center; padding: 50px;">
-            <h2>ไม่พบสินค้า</h2>
-            <p>ขออภัย ไม่พบสินค้าที่คุณค้นหา</p>
-            <button onclick="window.close()" class="cta-button primary">ปิดหน้าต่าง</button>
-          </div>
-        `;
-      } else {
-        // แสดงรายละเอียดสินค้า
-        productDetailDiv.innerHTML = `
-          <div>
-            <img src="${product.image}" alt="${product.name}" class="product-detail-image" />
-          </div>
-          <div class="product-detail-info">
-            <h1>${product.name}</h1>
-            <p class="detail-category">${getCategoryName(product.category)}</p>
-            <p class="detail-price">฿${product.price.toLocaleString()}</p>
-            <p class="detail-description">${product.description}</p>
-            
-            <div class="quantity-selector">
-              <label>จำนวน:</label>
-              <button onclick="changeQuantity(-1)">-</button>
-              <input type="number" id="quantity" value="1" min="1" max="99" readonly />
-              <button onclick="changeQuantity(1)">+</button>
-            </div>
-            
-            <button class="detail-add-to-cart" onclick="addToCartFromDetail()">
-              เพิ่มลงตะกร้า
-            </button>
-          </div>
-        `;
-      }
-
-      // เปลี่ยนจำนวน
-      window.changeQuantity = function (change) {
-        const quantityInput = document.getElementById("quantity");
-        let currentValue = parseInt(quantityInput.value);
-        currentValue += change;
-        if (currentValue < 1) currentValue = 1;
-        if (currentValue > 99) currentValue = 99;
-        quantityInput.value = currentValue;
-      };
-
-      // เพิ่มลงตะกร้าจากหน้ารายละเอียด
-      window.addToCartFromDetail = function () {
-        const quantity = parseInt(document.getElementById("quantity").value);
-        
-        // ดึงตะกร้าจาก localStorage
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-        // ตรวจสอบว่ามีสินค้านี้อยู่แล้วหรือไม่
-        const existingItem = cart.find((item) => item.id === product.id);
-
-        if (existingItem) {
-          existingItem.quantity += quantity;
-        } else {
-          cart.push({
-            ...product,
-            quantity: quantity
-          });
-        }
-
-        // บันทึกกลับไปที่ localStorage
-        localStorage.setItem("cart", JSON.stringify(cart));
-
-        showModal(`เพิ่ม "${product.name}" (${quantity} ชิ้น) ลงตะกร้าแล้ว`);
-      };
     </script>
+
+    <script>
+  // ฟังก์ชันเพิ่มสินค้าจากหน้า detail
+  window.addToCartFromDetail = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get("id"));
+
+    const product = products.find((p) => p.id === productId);
+    if (!product) return;
+
+    const quantity = parseInt(document.getElementById("quantity").value);
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingItem = cart.find((item) => item.id === productId);
+
+    if (existingItem) {
+      existingItem.quantity += quantity;
+    } else {
+      cart.push({
+        ...product,
+        quantity: quantity,
+      });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showModal(`เพิ่ม "${product.name}" จำนวน ${quantity} ชิ้น ลงตะกร้าแล้ว`);
+    
+    // อัปเดต badge
+    if (window.updateCartBadge) updateCartBadge();
+  };
+
+  window.changeQuantity = function (change) {
+    const quantityInput = document.getElementById("quantity");
+    let value = parseInt(quantityInput.value);
+
+    value = Math.min(99, Math.max(1, value + change));
+    quantityInput.value = value;
+  };
+</script>
+
+    <script src="../JS/products.js"></script>
+    <script src="../JS/cart.js"></script>
+
+<script>
+  if (window.updateCartBadge) {
+    updateCartBadge();
+  }
+</script>
+
+    
   </body>
 </html>
